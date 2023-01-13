@@ -5,7 +5,7 @@ export class AppService {
   testConnection(): object {
     return {
       status: '200',
-      msg: 'Connection OK.',
+      msg: 'Connection OK',
     };
   }
 }
