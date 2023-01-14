@@ -5,6 +5,7 @@ import { AppService } from './app.service';
 import { UserService } from './user/user.service';
 import { UserModule } from './user/user.module';
 import 'dotenv/config';
+import { User } from './user/user.entity';
 
 @Module({
   imports: [
@@ -15,12 +16,12 @@ import 'dotenv/config';
       username: 'root',
       password: 'root',
       database: 'typeorm',
-      entities: [],
+      entities: [User],
       synchronize: true,
     }),
     UserModule,
   ],
   controllers: [AppController],
-  providers: [AppService, UserService],
+  providers: [AppService],
 })
 export class AppModule {}
