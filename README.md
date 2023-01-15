@@ -31,6 +31,11 @@
 ```bash
 $ yarn
 ```
+## Docker
+
+```bash
+$ docker-compose up -d
+```
 
 ## Running the app
 
