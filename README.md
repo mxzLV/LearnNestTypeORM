@@ -69,7 +69,7 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 
 ## Learner
 
-- REdirect - [REdirect](https://github.com/VuongSyHanh)
+- Tom - [Tom](https://github.com/VuongSyHanh)
 
 ## License
 
