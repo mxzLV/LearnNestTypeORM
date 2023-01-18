@@ -1,12 +1,12 @@
 services:
-  learn-nest-typeorm:
+  node:
     image: node:lts-hydrogen
     command: sh -c "yarn install && yarn start:dev"
     ports:
-        - 3000:3000
+      - 3000:3000
     working_dir: /app
     volumes:
-        - ./:/app
+      - ./:/app
     environment:
       MYSQL_HOST: mysql
       MYSQL_USER: root
@@ -14,12 +14,8 @@ services:
       MYSQL_DB: typeorm
   mysql:
     image: mysql:8.0
-    ports:
-      - "3309:3306"
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: typeorm
-      MYSQL_USER: syhanh
-      MYSQL_PASSWORD: syhanh
     volumes:
       - ./data/mysql:/var/lib/mysql
